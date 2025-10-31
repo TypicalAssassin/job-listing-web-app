@@ -1,0 +1,56 @@
+
+# Environment variables
+.env
+*.env
+
+# Logs and temporary files
+*.log
+*.tmp
+*.db
+*.sqlite
+
+# IDE / Editor folders
+.vscode/
+.idea/
+.DS_Store
+
+
+# Python (Backend & Scraper)
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+myenv/
+backend/myenv/
+.scrapy/
+
+# Flask instance folder
+instance/
+
+
+# Node / React (Frontend)
+
+/frontend/node_modules/
+/frontend/build/
+/frontend/coverage/
+/frontend/.pnp
+/frontend/.pnp.js
+
+# npm / yarn logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment files for frontend
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+
+Thumbs.db
