@@ -1,8 +1,8 @@
-**Job Listing Web App**
+# Job Listing Web App
 
 A full-stack web application that scrapes actuarial job listings.
 
-**Prerequisites**
+# Prerequisites
 
 Make sure you have the following installed:
 
@@ -12,15 +12,15 @@ Node.js v22.16.0
 
 MySQL 8.0 (installed and running)
 
--> 1. Setup Database ----------------------------
-# Access MySQL
+# -> 1. Setup Database ----------------------------
+Access MySQL
 mysql -u root -p
 
-# In MySQL shell
+In MySQL shell
 CREATE DATABASE job_listing_db;
 EXIT;
 
--> 2. Setup Backend ----------------------------
+# -> 2. Setup Backend ----------------------------
 cd backend
 python -m venv myenv
 myenv\Scripts\activate
@@ -47,7 +47,7 @@ Database tables created successfully!
 
 Keep this terminal running.
 
--> 3. Setup Frontend ----------------------------
+# -> 3. Setup Frontend ----------------------------
 
 Open a new terminal and run:
 
@@ -67,7 +67,7 @@ http://localhost:3000
 
 Keep this terminal running as well.
 
--> 4. Run Scraper ----------------------------
+# -> 4. Run Scraper ----------------------------
 
 Open another new terminal (use the same Python virtual environment you created earlier):
 
@@ -78,12 +78,12 @@ python scrape.py
 
 This will scrape est: 300 actuarial jobs from actuarylist.com and store them in the database.
 
-**Access the App**
+# Access the App
 
 Visit your frontend in the browser:
 http://localhost:3000
 
-**Notes:**
+# Notes:
 
 The backend API runs at http://127.0.0.1:5000
 
