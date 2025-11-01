@@ -14,25 +14,35 @@ MySQL 8.0 (installed and running)
 
 # -> 1. Setup Database ----------------------------
 Access MySQL
+
 mysql -u root -p
 
 In MySQL shell
+
 CREATE DATABASE job_listing_db;
+
 EXIT;
 
 # -> 2. Setup Backend ----------------------------
 cd backend
+
 python -m venv myenv
+
 myenv\Scripts\activate
+
 pip install -r requirements.txt
 
 
 Create a .env file inside the backend directory with the following content:
 
 DB_USER=root
+
 DB_PASSWORD=your_actual_db_password
+
 DB_HOST=localhost
+
 DB_PORT=3306
+
 DB_NAME=job_listing_db
 
 
@@ -52,12 +62,14 @@ Keep this terminal running.
 Open a new terminal and run:
 
 cd frontend
+
 npm install
 
 Create a .env file inside the frontend directory with the following content:
 
 REACT_APP_API_BASE_URL=http://localhost:5000/api
 
+Then run:
 
 npm start
 
@@ -72,7 +84,9 @@ Keep this terminal running as well.
 Open another new terminal (use the same Python virtual environment you created earlier):
 
 cd Scraper
+
 ..\backend\myenv\Scripts\activate
+
 python scrape.py
 
 
@@ -81,6 +95,7 @@ This will scrape est: 300 actuarial jobs from actuarylist.com and store them in 
 # Access the App
 
 Visit your frontend in the browser:
+
 http://localhost:3000
 
 # Notes:
