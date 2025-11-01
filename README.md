@@ -105,3 +105,7 @@ The backend API runs at http://127.0.0.1:5000
 The frontend (React) runs at http://localhost:3000
 
 Make sure MySQL is running before starting the backend or scraper.
+
+# Video Link:
+
+https://drive.google.com/file/d/17-nf3kpsLexnSPNCTPKq88K0NkgJM2l8/view?usp=drive_link
